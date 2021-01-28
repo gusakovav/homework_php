@@ -3,6 +3,10 @@
 let form = document.querySelector('form');
 function responseHandler(serverAnswer) {
     console.log(serverAnswer);
+let post = document.getElementById('post');
+let divPost= document.createElement("div")
+divPost.innerHTML = `${serverAnswer}`;
+post.append(divPost);
 }
 
     form.addEventListener('submit', async (event) => {
