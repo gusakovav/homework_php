@@ -2,11 +2,6 @@
 session_start();
 $login = $_SESSION['login'];
 
-if ($server['REQUEST_METHOD'] === 'POST') {
-    $post = $_POST;
-    echo $post['text'];
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +26,7 @@ if ($server['REQUEST_METHOD'] === 'POST') {
 
     <h2>Контент доступен всем пользователям</h2>  
 
-<div></div>
+<div id="post"></div>
 
     <?php if(isset($login)): ?>
         <form>

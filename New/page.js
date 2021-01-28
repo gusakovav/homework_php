@@ -7,7 +7,7 @@ function responseHandler(serverAnswer) {
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
-        const response = await fetch('page.php', 
+        const response = await fetch('load.php', 
             {
                 method: 'POST',
                 body: new FormData(form)
